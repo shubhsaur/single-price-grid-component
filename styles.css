@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+	--Cyan: hsl(179, 62%, 43%);
+	--BrightYellow: hsl(71, 73%, 54%);
+	--LightGray: hsl(204, 43%, 93%);
+	--GrayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+	font-size: 16px;
+	font-family: "Karla", sans-serif;
+	background: var(--LightGray);
+}
+
+main {
+	display: grid;
+	margin: 3em 1em;
+}
+
+.heading {
+	background: white;
+	text-align: start;
+	padding: 1.8em;
+	border-radius: 0.7em 0.7em 0 0;
+}
+
+.heading h1 {
+	font-weight: 700;
+	color: var(--Cyan);
+	font-size: 1.6rem;
+}
+.heading h2 {
+	color: var(--BrightYellow);
+	font-size: 1.2rem;
+}
+
+.heading p {
+	color: var(--GrayishBlue);
+	line-height: 1.8rem;
+}
+.subscription {
+	background: var(--Cyan);
+	padding: 1.8em;
+}
+
+.subscription h2 {
+	color: hsla(0, 0%, 100%, 0.95);
+}
+
+.subscription .price {
+	color: hsla(0, 0%, 100%, 0.95);
+	font-size: 2.8rem;
+	font-weight: 700;
+}
+
+.subscription .duration {
+	color: hsla(204, 43%, 93%, 0.85);
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.subscription p {
+	color: hsla(0, 0%, 100%, 0.9);
+	font-size: 1.2rem;
+}
+
+.subscription button {
+	width: 100%;
+	padding: 0.8em 2em;
+	background: var(--BrightYellow);
+	color: hsla(0, 0%, 100%, 0.95);
+	font-weight: 700;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 0.3em;
+}
+
+.features {
+	background: hsla(179, 62%, 43%, 0.7);
+	padding: 1.8em;
+	border-radius: 0 0 0.7em 0.7em;
+}
+
+.features h2 {
+	color: hsla(0, 0%, 100%, 0.95);
+}
+
+.features ul {
+	list-style-type: none;
+}
+
+.features ul li {
+	color: var(--LightGray);
+	margin-left: -2.2em;
+	margin-bottom: 0.5em;
+	font-size: 1.1rem;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 765px) and (max-width: 1199px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 250px 350px;
+		max-width: 50%;
+		margin: 2em auto;
+	}
+
+	.heading {
+		grid-column: span 3;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.subscription {
+		border-radius: 0 0 0 0.7em;
+	}
+
+	.features {
+		border-radius: 0 0 0.7em 0;
+	}
+
+    .features ul li{
+        margin: 0.3em;
+        margin-left: -2.1em;
+
+    }
+}
+
+@media (min-width: 1200px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 250px 350px;
+		max-width: 50%;
+		margin: 2em auto;
+	}
+
+	.heading {
+		grid-column: span 3;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.subscription {
+		border-radius: 0 0 0 0.7em;
+	}
+
+	.subscription button {
+		margin-top: 1.4em;
+	}
+	.features {
+		border-radius: 0 0 0.7em 0;
+	}
+}
