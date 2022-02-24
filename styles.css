@@ -74,6 +74,11 @@ main {
 	font-size: 1.2rem;
 	border: none;
 	border-radius: 0.3em;
+	cursor: pointer;
+}
+
+.subscription button:hover{
+	background: hsla(71, 73%, 54%, 0.7);
 }
 
 .features {
